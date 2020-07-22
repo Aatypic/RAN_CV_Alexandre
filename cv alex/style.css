@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* menu navigation */
+.navbar {
+    font-family: 'Bangers';
+    top: 0;
+    left: 0;
+    min-height: 20vh;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-shadow: 1px 1px black;
+
+    
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    justify-content: flex-start;
+    
+}
+
+.logo h1 {
+
+}
+.logo h1:hover{
+    transform: scale(1.2);
+    border-bottom: 4px solid black;
+    color: rgb(109, 58, 0);
+}
+
+.picto-item {
+    position: relative;  /*les .picto-item deviennent référents*/
+    cursor: url(hand.cur), pointer;
+    border-radius: 50%;
+  }
+  
+ /* on génère un élément :after lors du survol et du focus :*/
+  
+ .picto-item:hover:after,
+ .picto-item:focus:after {
+   content: attr(aria-label);  /* on affiche aria-label */
+   position: absolute;
+   top: 3em;
+   left: 390%;
+     transform: translateX(-50%); /* on centre horizontalement  */
+   z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+   white-space: nowrap;  /* on interdit le retour à la ligne*/
+   padding: 5px 14px;
+   background: #351a00;
+   color: transparent;
+   border-radius: 4px;
+   font-size: 1.2rem;
+ }
+ 
+ /* on génère un second élément en :before pour la flèche */
+ 
+ [aria-label]:hover:before,
+ [aria-label]:focus:before {
+   content: "▼";
+   position: absolute;
+   top: 2.5em;
+     left: 115%;
+     transform: translateX(-50%); /* on centre horizontalement  */
+   font-size: 20px;
+   color: #351a00;
+ }
+ 
+ /* pas de contour durant le :focus */
+ [aria-label]:focus {
+   outline: none;
+ }
+  
+  
+  
+  /* déco */ 
+  
+  body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #F1EFE2;
+    font-size: 1.4em;
+    line-height: 1.4;
+    font-family: georgia, sans-serif;
+  }
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #789;
+    text-align: center;
+    text-shadow: 1px 1px #fff;
+  }
+  p, .pictos {
+    text-align: center;
+  }
+  
+  .picto-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .2em;
+    width: 1.2em;
+    height: 1.2em;
+    color: #413219;
+    background: #e1d3bd;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+  }
+.nav-links {
+    display: flex;
+    justify-content: space-around;  
+    width: 40%;
+}
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.nav-links a:hover {
+    background-color:  rgb(204, 204, 204);
+    color: black;
+    border-bottom: 3px solid chartreuse;
+}
+/* fin menu navigation */
+/* header */
+
+header {
+    height: 15%;
+    background-color: chartreuse;
+    font-family: 'Bangers';
+    margin: 15px;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    justify-content: center;
+}
+
+/* fin header */
+section {
+    background-color: rgb(167, 167, 167);
+    margin: 15px;
+    box-shadow: 2px 2px 2px black;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+}
