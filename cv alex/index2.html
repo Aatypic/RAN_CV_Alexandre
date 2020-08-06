@@ -1,90 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style2.css" />
+  <title>Document</title>
 </head>
+
 <body>
-    <!-- MENU NAVBAR -->
-    <div class="navbar">
-        <div class="logo">
-          <h1>Aat</h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#aacquerir">Objectifs</a></li>
-            <li><a href="#experience">Expérience</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-        </ul>
+  <!-- MENU NAVBAR -->
+  <div class="navbar">
+    <div class="logo">
+      <h1>Aat</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#objectifs">Objectifs</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+    </ul>
+  </div>
+
+  <!-- BLOCS COMICS -->
+  <article class="comic">
+
+    <!-- BLOC 1 -->
+    <div class="panel">
+      <p class="text top-left">Alexandre Abeauzit-Tahiri</p>
+      <ul class="intro" id="introduction">
+        <li>21 rue du sergent blandan</li>
+        <li>54000 Nancy</li>
+        <li>Tel:0638498363</li>
+        <li>mail: al.atahiri@gmail.com</li>
+        <li>Permis B</li>
+      </ul>
+
+      <p class="text bottom-right">...</p>
     </div>
 
-    <!-- BLOCS COMICS -->
-    <article class="comic">
+    <!-- BLOC 2 -->
+    <div class="panel" id="bloc2">
+      <img id="avatar" src="images/avatar_me.jpeg" alt="mon avatar" />
+      <p class="speech projet">Projet Développeur Web !</p>
+    </div>
 
-        <div class="panel"> <!-- BLOC 1 -->
-            <p class="intro"><br>
-                21 rue du sergent blandan <br>
-                54000 Nancy <br>
-                Tel:0638498363 <br>
-                mail: al.atahiri@gmail.com <br>
-                Permis B</p>
-          <p class="text top-left">Alexandre Abeauzit-Tahiri</p>
-          <p class="text bottom-right">...</p>
-        </div>
-        <div class="panel"> <!-- BLOC 2 -->
-          <img id="avatar" src="images/avatar_me.jpeg" alt="mon avatar">
-          <p class="speech projet">Projet Développeur Web !</p>
-        </div>
-        <div class="panel" id="competences"> <!-- BLOC 3 -->
-            <p class="intro"><br>Gestion de projet :</p>
-            <p class="text top-left">Compétences</p>
-            <p class="description">Présentation, initier un projet, compréhension du déroulement d’un projet</p>
-            
-        </div>
-        <div class="panel" id="aacquerir"> <!-- BLOC 4-->
-            <p class="intro"><br>Conception :</p>
-            <p class="description">Participer à l’analyse des besoins.</p>
-            <p class="intro">Langages :</p>
-            <p class="description">HTML5 et CSS3. PHP & MySQL (notions de base)</p>
-            
-        </div>
-        <div class="panel"> <!-- BLOC 5 -->
-          <p class="speech">Objectifs</p>
-          <p class="description">Élaborer le design graphique d'un outil de communication numérique<br>
-                                Réaliser un outil de communication numérique<br>
-                                Contribuer à la gestion et au suivi d'un projet de communication numérique
-          </p>
-        </div>
-    
-        <div class="panel" id="experience"> <!-- BLOC 6 -->
-            <p class="text top-left">Expérience</p>
-            <p class="description"><br>2016 - 2020<br>Intervenant Péri-scolaire - Gesal54 - Nancy</p>
-            <p class="description">2013 - 2014<br>Assistant technique - Mission intérimaire - Berlin</p>
-            <p class="description">2007 - 2009<br> Coach de Basketball - Club CBO - Orange</p>
-        </div>
-        <div class="panel" id="formation"> <!-- BLOC 7 -->
-            <p class="text bottom-right">Formation</p>
-            <p class="description">2020 en cours: Formation Remise À Niveau (RAN) des métiers du numérique - AFPA - en ligne</p>
-            <p class="description">2017 - 2018 Apprentissage autodidacte - OpenClassrooms - en ligne</p>
-            <p class="description">2014 - 2015 Cours d’informatique privé - VHS - Berlin<br>
-                Introduction à divers languages JAVA, PhP&MySQL, HTML&CSS</p>
-            <p class="description">2009 Baccaulauréat STG Marketing - Orange</p>
-        </div>
+    <!-- BLOC 3 -->
+    <div class="panel" id="competences">
+      <p class="text top-left">Compétences</p>
+      <p class="intro">Gestion de projet :</p>
+      <p class="description">
+        Présentation, initier un projet, compréhension du déroulement d’un
+        projet
+      </p>
+      <p class="intro">Conception :</p>
+      <p class="description">Participer à l’analyse des besoins.</p>
+    </div>
 
-        <div class="panel"> <!-- BLOC 8 -->
-            
-        </div>
-        
-        
-        <div class="panel" id="hobbies"> <!-- BLOC 9 -->
-            <p class="text top-left">Hobbies</p>
-            <p class="description"><br>Basketball, séries-tv, langues étrangères, jeux vidéos, cuisine.</p>
-            <p class="text bottom-right">To be continued ...</p>
-        </div>
-      </article>
+    <!-- BLOC 4-->
+    <div class="panel">
+      <p class="text top-left"> ! </p>
+      <p class="intro">Technique Web :</p>
+      <p class="description">Concevoir le contenu des pages, avec un langage et style approprié.
+        Connaître les technologies de communications multimédia.</p>
+      <p class="intro">Langages :</p>
+      <p class="description">HTML5 et CSS3. PHP & MySQL (notions de base)</p>
+    </div>
+
+    <!-- BLOC 5 -->
+    <div class="panel" id="objectifs">
+      <p class="speech">Objectifs</p>
+      <ul class="description">
+        <li>Élaborer le design graphique d'un outil de communication numérique</li>
+        <li>Réaliser un outil de communication numérique</li>
+        <li>Intégrer et publier des pages Web</li>
+      </ul>
+    </div>
+
+    <!-- BLOC 6 -->
+    <div class="panel">
+      <p class="text top-left">...</p>
+      <ul class="description" style="padding-top: 25px;">
+        <li>Intégrer des contenus interactifs et dynamiques dans un site Web</li>
+        <li>Concevoir des sites Web avec des systèmes de gestion de contenu (CMS)</li>
+        <li>Contribuer à la gestion et au suivi d'un projet de communication
+          numérique</li>
+      </ul>
+      <img src="images/wow_comic.png" alt="wow comic" id="wow">
+    </div>
+
+    <!-- BLOC 7 -->
+    <div class="panel" id="experience">
+      <p class="text top-left">Expérience</p>
+      <p class="description">
+        <br />2016 - 2020<br />Intervenant Péri-scolaire - Gesal54 - Nancy
+      </p>
+      <p class="description">
+        2013 - 2014<br />Assistant technique - Mission intérimaire - Berlin
+      </p>
+      <p class="description">
+        2007 - 2009<br />
+        Coach de Basketball - Club CBO - Orange
+      </p>
+    </div>
+
+    <!-- BLOC 8 -->
+    <div class="panel">
+
+    </div>
+
+    <!-- BLOC 9 -->
+    <div class="panel" id="formation">
+      <p class="text bottom-right">Formation</p>
+      <ul class="description">
+        <li>2020 en cours: Formation Remise À Niveau (RAN) des métiers du
+          numérique - AFPA - en ligne</li>
+        <li>2017 - 2020: Apprentissage autodidacte - OpenClassrooms - en ligne</li>
+        <li>2015 - 2016: Licence info-comm - Nancy</li>
+        <li>2014 - 2015: Cours d’informatique privé - VHS - Berlin
+          Introduction à divers languages JAVA, PhP&MySQL, HTML&CSS</li>
+      </ul>
+    </div>
+
+    <!-- BLOC 10 -->
+    <div class="panel">
+
+    </div>
+
+    <!-- BLOC 11 -->
+    <div class="panel" id="hobbies">
+      <p class="text top-left">Hobbies</p>
+      <p class="description">
+        Basketball, séries-tv, langues étrangères, jeux vidéos, cuisine.
+      </p>
+      <img src="images/smoke_comic.png" alt="comic smoke" id="smoke">
+      <p class="text bottom-right">To be continued ...</p>
+    </div>
+  </article>
+
+  <footer>
+
+    <!-- <a href='https://pngtree.com/so/comic'>comic png from pngtree.com</a> -->
+  </footer>
 </body>
+
 </html>
